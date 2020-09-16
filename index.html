@@ -546,13 +546,20 @@
             Envie-nos uma mensagem e responseremos assim que possível
           </h3>
         </div>
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <form
+          id="contactForm"
+          name="sentMessage"
+          novalidate="novalidate"
+          action="https://formspree.io/mvovpwjd"
+          method="POST"
+        >
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6">
               <div class="form-group">
                 <input
                   class="form-control"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Seu Nome *"
                   required="required"
@@ -565,6 +572,7 @@
                   class="form-control"
                   id="email"
                   type="email"
+                  name="_replyto"
                   placeholder="Seu Email *"
                   required="required"
                   data-validation-required-message="Please enter your email address."
@@ -576,6 +584,7 @@
                   class="form-control"
                   id="phone"
                   type="tel"
+                  name="phone"
                   placeholder="Seu Número *"
                   required="required"
                   data-validation-required-message="Please enter your phone number."
@@ -588,6 +597,7 @@
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   placeholder="Sua Mensagem *"
                   required="required"
                   data-validation-required-message="Please enter a message."
@@ -602,6 +612,7 @@
               class="btn btn-primary btn-xl text-uppercase"
               id="sendMessageButton"
               type="submit"
+              value="Send"
             >
               Enviar Mensagem
             </button>
