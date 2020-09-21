@@ -33,6 +33,7 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/little_styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
       rel="stylesheet"
@@ -42,9 +43,6 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
-          ><img src="assets/img/Logo.png" alt=""
-        /></a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -58,25 +56,46 @@
           <i class="fas fa-bars ml-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
+          <ul class="navbar-nav text-uppercase m-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services"
+              <a
+                class="nav-link js-scroll-trigger"
+                style="font-size: 18px"
+                href="#services"
                 >Serviços</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Sobre</a>
+              <a
+                class="nav-link js-scroll-trigger"
+                style="font-size: 18px"
+                href="#portfolio"
+                >Sobre</a
+              >
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>-->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team"
+              <a
+                class="nav-link js-scroll-trigger"
+                style="font-size: 18px"
+                href="#depositions"
+                >Depoimentos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link js-scroll-trigger"
+                style="font-size: 18px"
+                href="#clients"
                 >Clientes e Parceiros</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+              <a
+                class="nav-link js-scroll-trigger"
+                style="font-size: 18px"
+                href="#contact"
+                >Contato</a
+              >
             </li>
           </ul>
         </div>
@@ -87,11 +106,14 @@
       <div class="container">
         <div
           class="masthead-heading"
-          style="font-family: 'Allura'; font-size: 120px; margin-bottom: 32px"
+          style="font-family: 'Allura'; font-size: 150px; margin-bottom: 32px"
         >
           PSil
         </div>
-        <div class="masthead-subheading" style="margin-bottom: 60px">
+        <div
+          class="masthead-subheading"
+          style="font-size: 40px; margin-bottom: 60px"
+        >
           Desenvolvimento Humano e Organizacional
         </div>
         <a
@@ -102,11 +124,7 @@
       </div>
     </header>
     <!-- Services-->
-    <section
-      class="page-section"
-      id="services"
-      style="background-image: url(./assets/img/)"
-    >
+    <section class="page-section" id="services">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Serviços</h2>
@@ -114,10 +132,15 @@
         </div>
         <div class="row text-center">
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <!--<span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
-            </span>
+            </span>-->
+            <img
+              id="service_image"
+              src="./assets/img/services/icon1.png"
+              alt="Coaching de Carreira"
+            />
             <h4 class="my-3">Coaching de Carreira</h4>
             <p class="text-muted">
               É um processo com foco 100% em solução, conduzido de maneira
@@ -126,10 +149,15 @@
             </p>
           </div>
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <!--<span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-user-plus fa-stack-1x fa-inverse"></i>
-            </span>
+            </span>-->
+            <img
+              id="service_image"
+              src="./assets/img/services/icon2.jpg"
+              alt="Assessoria para Transição de Carreira / Outplacement"
+            />
             <h4 class="my-3">
               Assessoria para Transição de Carreira / Outplacement
             </h4>
@@ -141,10 +169,15 @@
             </p>
           </div>
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <!--<span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-angle-double-up fa-stack-1x fa-inverse"></i>
-            </span>
+            </span>-->
+            <img
+              id="service_image"
+              src="./assets/img/services/icon3.jpg"
+              alt="Coaching Vocacional"
+            />
             <h4 class="my-3">Coaching Vocacional</h4>
             <p class="text-muted">
               O coaching é um ótimo método de Orientação Vocacional, pois
@@ -157,10 +190,15 @@
         <br />
         <div class="row text-center">
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <!-- <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-            </span>
+            </span> -->
+            <img
+              id="service_image"
+              src="./assets/img/services/icon4.jpg"
+              alt="Consultoria em RH"
+            />
             <h4 class="my-3">Consultoria em RH</h4>
             <p class="text-muted">
               Essa metodologia tem por fundamento a educação de adultos. Nesse
@@ -170,10 +208,15 @@
             </p>
           </div>
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <!-- <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-            </span>
+            </span> -->
+            <img
+              id="service_image"
+              src="./assets/img/services/icon5.png"
+              alt="Treinamentos Comportamentais"
+            />
             <h4 class="my-3">Treinamentos Comportamentais</h4>
             <p class="text-muted">
               Desenvolvemos programas de Treinamento e Desenvolvimento
@@ -183,10 +226,15 @@
             </p>
           </div>
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <!-- <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-id-card fa-stack-1x fa-inverse"></i>
-            </span>
+            </span> -->
+            <img
+              id="service_image"
+              src="./assets/img/services/icon6.png"
+              alt="Assessment"
+            />
             <h4 class="my-3">Assessment</h4>
             <p class="text-muted">
               Um processo que consiste em avaliar detalhadamente o perfil de
@@ -213,7 +261,7 @@
         >
           <div class="row"></div>
           <div class="row align-items-center">
-            <div class="col-lg-4 ml-auto">
+            <div class="col-lg-3 m-auto">
               <p class="text-muted" style="color: #162612; text-align: center">
                 Consultoria em Recursos Humanos que nasceu de uma trajetória de
                 mais de vinte anos de experiência em Recursos Humanos de sua
@@ -225,20 +273,33 @@
                 recursos Humanos.
               </p>
             </div>
-            <div class="team-member col-lg-4 ml-auto" style="margin-bottom: 0">
+            <div class="team-member col-lg-3 m-auto" style="margin-bottom: 0">
               <img
                 class="mx-auto rounded-circle"
                 src="assets/img/Icon.png"
-                alt=""
+                alt="PSil"
+                style="margin-bottom: 20px"
               />
-              <h4
-                style="color: #162612; font-family: 'Allura'; font-size: 30px"
-              >
-                PSil
-              </h4>
             </div>
-            <div class="col-lg-4 mr-auto">
-              <p class="text-muted" style="color: #162612; text-align: center">
+            <div class="col-lg-3 m-auto">
+              <video
+                width="250"
+                height="250"
+                controls
+                style="border-radius: 50px"
+              >
+                <source
+                  src="./assets/video/ApresentaçãoPSil.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-lg-3 m-auto">
+              <p
+                class="text-muted"
+                style="color: #162612; text-align: center; font-size: 18px"
+              >
                 Nossa Missão é trabalhar com: <br />
                 • Paixão<br />
                 • Propósito<br />
@@ -268,7 +329,10 @@
               <p class="text-muted">Fundadora</p>
             </div>
             <div class="col-lg-4 ml-auto">
-              <p class="text-muted" style="color: #162612; text-align: center">
+              <p
+                class="text-muted"
+                style="color: #162612; text-align: center; font-size: 18px"
+              >
                 Silvana Lott tem mais de <b>vinte anos de experiência</b> em
                 Recursos Humanos atuando com Consultoria em Desenvolvimento
                 Organizacional, Treinamento e Desenvolvimento, Carreira e
@@ -277,7 +341,10 @@
               </p>
             </div>
             <div class="col-lg-4 mr-auto">
-              <p class="text-muted" style="color: #162612; text-align: center">
+              <p
+                class="text-muted"
+                style="color: #162612; text-align: center; font-size: 18px"
+              >
                 Psicóloga com MBA em Gestão de Pessoas, Coach com certificação
                 internacional pela Sociedade Latino Americana de Coaching,
                 Master em Programação Neurolinguística e Formação em Constelação
@@ -289,124 +356,69 @@
         </section>
       </div>
     </section>
-    <!-- TimeLine
-    <section class="page-section" id="about">
+    <!-- Depositions-->
+    <section class="page-section bg-light" id="depositions">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
+          <h2 class="section-heading text-uppercase">Depoimentos</h2>
           <h3 class="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
+            Mostrando Desempenho e Melhora com sucesso
           </h3>
         </div>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="team-member">
               <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/1.jpg"
+                class="mx-auto rounded-circle"
+                src="assets/img/team/deposition1.png"
+                alt="Juliana Barbosa e Oliveira"
+              />
+              <h4>Juliana Barbosa e Oliveira</h4>
+              <p class="text-muted">
+                Fundadora Jbeo Consultoria e Desenvolvimento
+              </p>
+              <p>
+                Tive oportunidade de trabalhar com Silvana em processo de
+                desenvolvimento de profissionais técnicos. Silvana foi
+                multiplicadora é de uma oficina desenhada por mim e minha
+                equipe. As avaliações dos participantes sobre seu desempenho
+                foram notáveis! Ela se mostrou uma pessoa comprometida, segura e
+                desenvolta.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="assets/img/team/deposition2.png"
                 alt=""
               />
+              <h4>Juliana Câmara</h4>
+              <p class="text-muted">
+                Engenheira Ambiental na Whirlpool Corporation
+              </p>
+              <p>
+                O trabalho de coaching que fiz com a Silvana foi fundamental
+                para eu estar onde estou hoje! Sua objetividade e sensibilidade
+                me ajudaram muito a entender meu propósito profissional e também
+                minha vida! Mil vezes obrigada pela oportunidade e aprender com
+                vc coisas que carregarei comigo para a vida toda!
+              </p>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 class="subheading">Our Humble Beginnings</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/2.jpg"
-                alt=""
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 class="subheading">An Agency is Born</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/3.jpg"
-                alt=""
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>December 2012</h4>
-                <h4 class="subheading">Transition to Full Service</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/4.jpg"
-                alt=""
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>July 2014</h4>
-                <h4 class="subheading">Phase Two Expansion</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>
-                Be Part
-                <br />
-                Of Our
-                <br />
-                Story!
-              </h4>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              O Sucesso vem acompanhado do esforço!
+            </p>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
     <!-- Clients-->
-    <section class="page-section bg-light" id="team">
+    <section class="page-section bg-light" id="clients">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Clientes e Parceiros</h2>
@@ -416,7 +428,7 @@
       <div class="py-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -424,7 +436,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -432,7 +444,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -440,7 +452,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -448,7 +460,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -456,7 +468,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -464,7 +476,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -472,7 +484,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -480,7 +492,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -488,7 +500,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -496,7 +508,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -504,7 +516,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -512,7 +524,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -520,7 +532,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -528,7 +540,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-md-2 col-sm-4 col-6 my-3">
+            <div class="col-md-2 col-sm-4 col-4 my-3">
               <a href="#!"
                 ><img
                   class="img-fluid d-block mx-auto"
@@ -545,8 +557,11 @@
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Entre em contato</h2>
-          <h3 class="section-subheading text-muted">
-            Envie-nos uma mensagem e responseremos assim que possível
+          <h3
+            class="section-subheading text-muted"
+            style="font-size: 20px; color: #ecece3 !important"
+          >
+            Envie-nos uma mensagem e responderemos assim que possível
           </h3>
         </div>
         <form
