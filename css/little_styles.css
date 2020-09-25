@@ -1,12 +1,16 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #SubTitle {
     font-size: 30px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   #SubTitle {
     font-size: 40px;
+  }
+
+  .tam {
+    height: 500px;
   }
 }
 
